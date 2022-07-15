@@ -1,0 +1,20 @@
+# This file is not a script in and of itself, but rather a set of aliases to drop into a users .bashrc script to allow for faster checking of various system statuses.
+# These commands are not always shorter to type, but keep you fingers on the home row on a qwerty keyboard and are much faster to type.
+# In your Linux user home directory, typically /home/<YOURUSERNAME> edit the file .bashrc and add these scripts under the last comment line that reads.
+
+# User specific aliases and functions
+
+# A quick check of available and used storage.
+alias memgrep = du -h
+
+# A quick check for errors in /var/log/messages outputs to less to allow up and down pagination.
+alias errgrep = grep err /var/log/messages | less
+
+# A quick check for failures in /var/log/messages outputs to less to allow up and down pagination.
+alias failgrep = grep fail /var/log/messages | less
+
+# A quick check for warn in /var/log/messages outputs to less to allow up and down pagination.
+alias warngrep = grep warn /var/log/messages | less
+
+# A quick check for failures in the /var/log/secure outputs to less to allow up and down pagination.
+alias secgrep = sudo grep fail /var/log/secure
