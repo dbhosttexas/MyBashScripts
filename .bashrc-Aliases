@@ -5,16 +5,16 @@
 # User specific aliases and functions
 
 # A quick check of available and used storage.
-alias memgrep = du -h
+alias memgrep="du -h"
 
 # A quick check for errors in /var/log/messages outputs to less to allow up and down pagination.
-alias errgrep = grep err /var/log/messages | less
+alias errgrep="grep err /var/log/messages | less"
 
 # A quick check for failures in /var/log/messages outputs to less to allow up and down pagination.
-alias failgrep = grep fail /var/log/messages | less
+alias failgrep="grep fail /var/log/messages | less"
 
 # A quick check for warn in /var/log/messages outputs to less to allow up and down pagination.
-alias warngrep = grep warn /var/log/messages | less
+alias warngrep="grep warn /var/log/messages | less"
 
 # A quick check for failures in the /var/log/secure outputs to less to allow up and down pagination.
-alias secgrep = sudo grep fail /var/log/secure
+alias secgrep="sudo grep fail /var/log/secure"
